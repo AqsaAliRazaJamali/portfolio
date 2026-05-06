@@ -41,11 +41,11 @@ https://aqsaalirazajamali.github.io/portfolio/
 ---
 
 ## 🎯 Skills
-**Programming:** Python, Java, JavaScript  
-**Web Development:** HTML, CSS, React, Node.js  
-**Databases:** MySQL, MongoDB 
-**Concepts:** Data Structures, OOP, Machine Learning, Problem Solving
-**Tools:** Git, GitHub, VS Code, IntelliJ IDEA  
+- **Programming:** Python, Java, JavaScript  
+- **Web Development:** HTML, CSS, React, Node.js  
+- **Databases:** MySQL, MongoDB 
+- **Concepts:** Data Structures, OOP, Machine Learning, Problem Solving
+- **Tools:** Git, GitHub, VS Code, IntelliJ IDEA  
 
 ---
 
