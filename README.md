@@ -1,54 +1,64 @@
 # 🚀 Aqsa Jamali – Portfolio Website
 
-A responsive personal portfolio website built with HTML, CSS, and JavaScript to showcase my projects, skills, and experience.
+A modern, responsive personal portfolio website built using HTML, CSS, and JavaScript to showcase my projects, skills, experience, and leadership roles.
 
 ---
 
 ## 📌 About Me
-I am a Computer Science student at Sukkur IBA University with a strong interest in software development, problem-solving, and building real-world applications.
+I am a Computer Science student at Sukkur IBA University with a strong interest in software development, full-stack engineering, and AI-powered applications. I enjoy building interactive systems that combine logic, design, and real-world problem solving.
 
 ---
 
 ## 🌐 Live Website
-
 https://aqsaalirazajamali.github.io/portfolio/
 
 ---
 
 ## 💻 Technologies Used
-- HTML  
-- CSS  
+- HTML5  
+- CSS3  
 - JavaScript  
 
 ---
 
 ## 📂 Featured Projects
-- **Math Visualizer Website**  
-  Interactive visualization of mathematical equations with a clean UI.
 
-- **Shopping Application (GUI)**  
-  Java-based application with cart and product management features.
+### 🔹 CareerMint – AI Resume Builder (Team Project)
+MERN stack-based AI resume builder with features like content enhancement, PDF parsing, live preview, and secure authentication.
 
-- **MCQs Quiz Application**  
-  Quiz system with scoring and randomized questions.
+### 🔹 BFS Algorithm Visualizer
+Interactive web-based visualization of Breadth-First Search with animated traversal and queue simulation.
 
-- **Chatbot Application**  
-  Python-based chatbot with API integration.
+### 🔹 Regular Languages & Finite Automata Visualizer
+Educational tool for DFA, NFA, and Regular Expressions with real-time validation and visual comparisons.
 
-- **Car Price Prediction Model**  
-  Machine learning model for predicting car prices.
+### 🔹 Math Visualizer Website
+Interactive platform demonstrating mathematical equations using dynamic JavaScript animations.
+
+### 🔹 Car Price Prediction Model
+Machine learning model for predicting car prices using data preprocessing and feature engineering.
 
 ---
 
 ## 🎯 Skills
-- **Programming:** Python, Java, JavaScript  
-- **Web Development:** HTML, CSS, React, Node.js  
-- **Databases:** MySQL, MongoDB 
-- **Concepts:** Data Structures, OOP, Machine Learning, Problem Solving
-- **Tools:** Git, GitHub, VS Code, IntelliJ IDEA  
+
+**Programming Languages:** Python, Java, JavaScript  
+**Web Development:** HTML, CSS, React, Node.js, Express.js  
+**Frameworks & Libraries:** Redux Toolkit, Tailwind CSS  
+**Database:** MongoDB  
+**AI & Data Science:** Machine Learning, Data Analysis, Data Visualization  
+**Tools:** Git, GitHub, VS Code  
+**Concepts:** Data Structures, OOP, Problem Solving  
+
+---
+
+## 🏆 Leadership
+- Computer Science Department Representative at Sukkur IBA University  
+- Act as liaison between students and faculty and support academic coordination  
 
 ---
 
 ## 📫 Contact
-- GitHub: https://github.com/aqsaalirazajamali
+- GitHub: https://github.com/aqsaalirazajamali  
 - LinkedIn: https://www.linkedin.com/in/aqsa-ali-raza-4385a7351
+- Email: aqsaaliraza16@gmail.com
