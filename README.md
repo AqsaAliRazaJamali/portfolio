@@ -61,4 +61,4 @@ Machine learning model for predicting car prices using data preprocessing and fe
 ## 📫 Contact
 - GitHub: https://github.com/aqsaalirazajamali  
 - LinkedIn: https://www.linkedin.com/in/aqsa-ali-raza-4385a7351
-- Email: aqsaaliraza16@gmail.com
+- Email: aqsajamali72@gmail.com
