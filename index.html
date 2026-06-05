@@ -378,6 +378,7 @@
   .badge-live { background: rgba(124,106,240,0.12); border: 1px solid rgba(124,106,240,0.3); color: var(--accent); }
   .badge-sec  { background: rgba(239,68,68,0.1);   border: 1px solid rgba(239,68,68,0.3);  color: #f87171; }
   .badge-viz  { background: rgba(56,189,248,0.1);  border: 1px solid rgba(56,189,248,0.3); color: #38bdf8; }
+  .badge-privacy { background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); color: #34d399; }
  
   /* Live link inside card */
   .project-link {
@@ -393,6 +394,11 @@
     transition: all 0.25s;
   }
   .project-link:hover { border-color: var(--accent); color: var(--accent); }
+ 
+  .project-links {
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    margin-top: 1rem;
+  }
  
   .project-card {
     background: var(--surface);
@@ -616,7 +622,7 @@
       </div>
       <div class="about-stats reveal">
         <div class="stat-card">
-          <div class="stat-number">13+</div>
+          <div class="stat-number">14+</div>
           <div class="stat-label">Projects Completed</div>
         </div>
         <div class="stat-card">
@@ -671,6 +677,8 @@
           <span class="skill-tag">Tailwind CSS</span>
           <span class="skill-tag">Recharts</span>
           <span class="skill-tag">Vite</span>
+          <span class="skill-tag">pdf-lib</span>
+          <span class="skill-tag">Lucide React</span>
         </div>
       </div>
       <div class="skill-category reveal">
@@ -678,6 +686,7 @@
         <div class="skill-cat-title">Database</div>
         <div class="skill-tags">
           <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">MySQL</span>
         </div>
       </div>
       <div class="skill-category reveal">
@@ -699,9 +708,11 @@
           <span class="skill-tag">Git</span>
           <span class="skill-tag">GitHub</span>
           <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Vercel</span>
           <span class="skill-tag">OOP</span>
           <span class="skill-tag">Data Structures</span>
           <span class="skill-tag">Web Crypto API</span>
+          <span class="skill-tag">Client-Side Processing</span>
         </div>
       </div>
     </div>
@@ -730,6 +741,26 @@
           <div class="project-tech">
             <span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Redux</span><span>Tailwind CSS</span><span>JWT</span>
           </div>
+        </div>
+      </div>
+ 
+      <!-- Privacy-First Local PDF Toolkit -->
+      <div class="project-card featured reveal">
+        <div>
+          <div class="project-year">2026</div>
+          <div class="project-badges">
+            <span class="badge badge-privacy">Privacy-First</span>
+            <span class="badge badge-live">Live App</span>
+            <span class="badge badge-sec">Security</span>
+          </div>
+          <div class="project-title">Privacy-First Local PDF Toolkit</div>
+          <p class="project-desc">A modern browser-based PDF workspace where all processing happens 100% client-side — no file uploads, no server storage, zero data transmission. Features smart PDF merging with drag-and-drop reordering, precision page splitting with custom range extraction (e.g. 1-3, 5, 8-10), text extraction, and a real-time session activity feed. Deployed on Vercel with continuous GitHub integration.</p>
+        </div>
+        <div class="project-right">
+          <div class="project-tech">
+            <span>React</span><span>Vite</span><span>pdf-lib</span><span>Tailwind CSS</span><span>Lucide React</span><span>Vercel</span><span>ArrayBuffers</span>
+          </div>
+          <a href="https://vercel.com/aqsa-jamali-s-projects/pdf-toolkit" target="_blank" class="project-link">↗ Live App</a>
         </div>
       </div>
  
@@ -791,6 +822,26 @@
         <a href="https://github.com/aqsaalirazajamali/securepass-studio" target="_blank" class="project-link">↗ GitHub</a>
       </div>
  
+      <!-- Finite Automata -->
+      <div class="project-card reveal">
+        <div class="project-year">2026</div>
+        <div class="project-title">Finite Automata Visualizer</div>
+        <p class="project-desc">Educational platform for Regular Languages, DFA, NFA, and Regex with real-time string validation, pattern matching, and animated DFA vs NFA comparisons.</p>
+        <div class="project-tech">
+          <span>HTML</span><span>Tailwind CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+ 
+      <!-- BFS -->
+      <div class="project-card reveal">
+        <div class="project-year">2026</div>
+        <div class="project-title">BFS Algorithm Visualizer</div>
+        <p class="project-desc">Interactive system demonstrating BFS traversal with animated graph exploration, real-time queue visualization, and step-by-step or auto-play execution modes.</p>
+        <div class="project-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+ 
       <!-- Math Visualizer -->
       <div class="project-card reveal">
         <div class="project-year">2026</div>
@@ -808,26 +859,6 @@
         <p class="project-desc">Web platform explaining AI and data science concepts through reusable React components, responsive layouts, and interactive UI elements for concept visualization.</p>
         <div class="project-tech">
           <span>React</span><span>JavaScript</span><span>CSS</span>
-        </div>
-      </div>
- 
-      <!-- BFS -->
-      <div class="project-card reveal">
-        <div class="project-year">2026</div>
-        <div class="project-title">BFS Algorithm Visualizer</div>
-        <p class="project-desc">Interactive system demonstrating BFS traversal with animated graph exploration, real-time queue visualization, and step-by-step or auto-play execution modes.</p>
-        <div class="project-tech">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        </div>
-      </div>
- 
-      <!-- Finite Automata -->
-      <div class="project-card reveal">
-        <div class="project-year">2026</div>
-        <div class="project-title">Finite Automata Visualizer</div>
-        <p class="project-desc">Educational platform for Regular Languages, DFA, NFA, and Regex with real-time string validation, pattern matching, and animated DFA vs NFA comparisons.</p>
-        <div class="project-tech">
-          <span>HTML</span><span>Tailwind CSS</span><span>JavaScript</span>
         </div>
       </div>
  
