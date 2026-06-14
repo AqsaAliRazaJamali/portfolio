@@ -6,7 +6,7 @@ A modern, responsive personal portfolio website built using HTML, CSS, and JavaS
  
 ## 📌 About Me
  
-I am a Computer Science student at Sukkur IBA University with a strong interest in full-stack engineering, AI-powered applications, and privacy-first software design. I enjoy building intelligent systems that combine logic, design, and real-world problem solving — from LLM-integrated tools and MERN stack applications to client-side security tools and interactive web apps.
+I am a Computer Science student at Sukkur IBA University with a strong interest in full-stack engineering, AI-powered applications, and privacy-first software design. I enjoy building intelligent systems that combine logic, design, and real-world problem solving, from LLM-integrated tools and MERN stack applications to client-side security tools and interactive web apps.
  
 ---
  
