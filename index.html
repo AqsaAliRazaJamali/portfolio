@@ -379,6 +379,7 @@
   .badge-sec  { background: rgba(239,68,68,0.1);   border: 1px solid rgba(239,68,68,0.3);  color: #f87171; }
   .badge-viz  { background: rgba(56,189,248,0.1);  border: 1px solid rgba(56,189,248,0.3); color: #38bdf8; }
   .badge-privacy { background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); color: #34d399; }
+  .badge-agent { background: rgba(124,106,240,0.12); border: 1px solid rgba(124,106,240,0.3); color: #a78bfa; }
  
   /* Live link inside card */
   .project-link {
@@ -496,6 +497,55 @@
     color: var(--accent);
   }
  
+  /* Certifications */
+  #certifications .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .cert-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.75rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .cert-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .cert-card:hover::before { transform: scaleX(1); }
+  .cert-card:hover {
+    border-color: rgba(124,106,240,0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  }
+  .cert-issuer {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+  }
+  .cert-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.25;
+  }
+  .cert-meta {
+    color: var(--muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+ 
   /* Contact */
   #contact { text-align: center; }
   .contact-email {
@@ -582,6 +632,7 @@
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certifications</a></li>
     <li><a href="#leadership">Leadership</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -622,7 +673,7 @@
       </div>
       <div class="about-stats reveal">
         <div class="stat-card">
-          <div class="stat-number">14+</div>
+          <div class="stat-number">15+</div>
           <div class="stat-label">Projects Completed</div>
         </div>
         <div class="stat-card">
@@ -655,6 +706,7 @@
           <span class="skill-tag">Python</span>
           <span class="skill-tag">Java</span>
           <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
         </div>
       </div>
       <div class="skill-category reveal">
@@ -683,10 +735,22 @@
         </div>
       </div>
       <div class="skill-category reveal">
+        <div class="skill-icon">⚙️</div>
+        <div class="skill-cat-title">Backend & APIs</div>
+        <div class="skill-tags">
+          <span class="skill-tag">FastAPI</span>
+          <span class="skill-tag">Uvicorn (ASGI)</span>
+          <span class="skill-tag">Asyncio</span>
+          <span class="skill-tag">JWT</span>
+          <span class="skill-tag">PassLib (Bcrypt)</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
         <div class="skill-icon">🗄️</div>
         <div class="skill-cat-title">Database</div>
         <div class="skill-tags">
           <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">In-Memory Key-Value Stores</span>
         </div>
       </div>
       <div class="skill-category reveal">
@@ -699,6 +763,7 @@
           <span class="skill-tag">Google Gemini API</span>
           <span class="skill-tag">Groq API</span>
           <span class="skill-tag">LLM Integration</span>
+          <span class="skill-tag">Multi-Agent Workflows</span>
         </div>
       </div>
       <div class="skill-category reveal">
@@ -713,6 +778,7 @@
           <span class="skill-tag">Data Structures</span>
           <span class="skill-tag">Web Crypto API</span>
           <span class="skill-tag">Client-Side Processing</span>
+          <span class="skill-tag">Asynchronous Routing</span>
         </div>
       </div>
     </div>
@@ -725,6 +791,25 @@
     <div class="section-label reveal">Projects</div>
     <h2 class="section-title reveal">Things I've built</h2>
     <div class="projects-grid">
+ 
+      <!-- VERTEX -->
+      <div class="project-card featured reveal">
+        <div>
+          <div class="project-year">2026</div>
+          <div class="project-badges">
+            <span class="badge badge-agent">Multi-Agent</span>
+            <span class="badge badge-sec">JWT Security</span>
+            <span class="badge badge-live">Full-Stack</span>
+          </div>
+          <div class="project-title">VERTEX — Multi-Agent Developer Dashboard</div>
+          <p class="project-desc">An enterprise-style control portal for orchestrating multi-agent developer workflows. Built on a FastAPI async execution router using non-blocking <code style="color:var(--accent);background:rgba(124,106,240,0.1);padding:0.1rem 0.4rem;border-radius:4px;">asyncio</code> loops to simulate concurrent agent task compilation, with JWT-secured session handshakes and Bcrypt-hashed credentials. The frontend pairs a real-time client-side password complexity engine with a terminal-styled live STDOUT monitor that streams backend status updates as they happen.</p>
+        </div>
+        <div class="project-right">
+          <div class="project-tech">
+            <span>FastAPI</span><span>Uvicorn</span><span>Asyncio</span><span>PyJWT</span><span>PassLib</span><span>React 19</span><span>TypeScript</span><span>Tailwind CSS</span>
+          </div>
+        </div>
+      </div>
  
       <!-- FEATURED: CareerMint -->
       <div class="project-card featured reveal">
@@ -946,6 +1031,26 @@
   </div>
 </section>
  
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-inner">
+    <div class="section-label reveal">Certifications</div>
+    <h2 class="section-title reveal">Continuous learning</h2>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <div class="cert-issuer">Simplilearn SkillUp</div>
+        <div class="cert-title">Generative AI Fundamentals</div>
+        <div class="cert-meta">Issued 16th June 2026 · Certificate code: 10355338</div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-issuer">freeCodeCamp</div>
+        <div class="cert-title">Scientific Computing with Python</div>
+        <div class="cert-meta">Issued June 2026 · Credential ID: aqsa_jamali/python-v9<br>Verified mastery of core Python programming methodologies, algorithm design, and computational problem-solving.</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
 <!-- LEADERSHIP -->
 <section id="leadership">
   <div class="section-inner">
@@ -1017,7 +1122,7 @@
   }
   animateRing();
  
-  document.querySelectorAll('a, button, .project-card, .stat-card').forEach(el => {
+  document.querySelectorAll('a, button, .project-card, .stat-card, .cert-card').forEach(el => {
     el.addEventListener('mouseenter', () => {
       cursor.style.transform = 'scale(2)';
       ring.style.transform = 'scale(1.5)';
